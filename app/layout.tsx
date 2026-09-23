@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { site, siteUrl } from "@/data/site";
 import { LanguageProvider } from "@/app/language-context";
 import { HeaderNav, SiteFooter } from "@/app/components";
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-6">{children}</main>
           <SiteFooter />
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
