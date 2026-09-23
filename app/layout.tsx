@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { site, siteUrl } from "@/data/site";
 import { LanguageProvider } from "@/app/language-context";
 import { HeaderNav, SiteFooter } from "@/app/components";
