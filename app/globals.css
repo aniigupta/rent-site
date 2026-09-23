@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+/* Animations: CSS only, no library. Turned off for people who ask for reduced motion. */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+}
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* On page load. Stagger with style={{ "--d": "150ms" }} */
+  .enter {
+    animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--d, 0ms) both;
+  }
+  .enter-bar {
+    animation: slide-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
+  }
+
+  /* As it scrolls into view. Browsers without support just show it. */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: fade-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+  }
 }

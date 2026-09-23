@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rooms & Shops for Rent
 
-## Getting Started
+A small website listing my rooms and shops for rent. Visitors reach it by scanning a QR code on a poster.
 
-First, run the development server:
+## Files you will edit
+
+| What | File |
+|---|---|
+| Properties: add, edit, or mark as rented | `data/properties.ts` |
+| Phone number, WhatsApp number, public location, Get Directions destination | `data/site.ts` |
+| Photos | `public/images/<property-id>/` |
+
+Everything else is in `app/` and rarely needs changes.
+
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Mark a property as rented or available
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In `data/properties.ts`, set `available: false` (rented) or `available: true`, then push to GitHub. Vercel redeploys automatically. The QR code stays the same.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Add photos
 
-## Learn More
+1. Put the files in `public/images/room-01/` (for example `1.jpg`, `2.jpg`). Keep each one under about 500 KB; photos resized to about 1600px wide are plenty.
+2. List them in the property: `images: ["/images/room-01/1.jpg", "/images/room-01/2.jpg"]`. The first photo is used on the card.
 
-To learn more about Next.js, take a look at the following resources:
+You can also use Cloudinary links (`https://res.cloudinary.com/...`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy (Vercel, free)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this folder to a GitHub repository.
+2. On vercel.com, click Add New → Project, import the repository, then Deploy. No settings are needed.
+3. Your address will be `https://<project-name>.vercel.app`. Choose the project name carefully, because the QR code will point to it.
