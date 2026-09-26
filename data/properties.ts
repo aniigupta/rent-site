@@ -23,6 +23,13 @@ export type Property = {
   contact?: { phone?: string; whatsapp?: string }; // optional, overrides data/site.ts
 };
 
+// Shared areas shown at the end of every room's gallery
+const common = ["/images/common/hall-1.jpeg", "/images/common/hall-2.jpeg", "/images/common/terrace.jpeg"];
+const photos = (id: string, n: number) => [
+  ...Array.from({ length: n }, (_, i) => `/images/${id}/${i + 1}.jpeg`),
+  ...common,
+];
+
 export const properties: Property[] = [
   {
     id: "room-01",
@@ -31,7 +38,7 @@ export const properties: Property[] = [
     title_hi: "कमरा 1",
     description: "Clean, airy room with good ventilation and natural light.",
     description_hi: "साफ-सुथरा और हवादार कमरा। अच्छा वेंटिलेशन और प्राकृतिक रोशनी।",
-    images: [],
+    images: photos("room-01", 5),
     location: "First floor",
     location_hi: "पहली मंजिल",
     features: [],
@@ -45,7 +52,7 @@ export const properties: Property[] = [
     title_hi: "कमरा 2",
     description: "Spacious room, suitable for a single person or couple.",
     description_hi: "बड़ा कमरा, अकेले व्यक्ति या जोड़े के लिए उपयुक्त।",
-    images: [],
+    images: photos("room-02", 3),
     location: "First floor",
     location_hi: "पहली मंजिल",
     features: [],
@@ -59,7 +66,7 @@ export const properties: Property[] = [
     title_hi: "कमरा 3",
     description: "Well-maintained room close to the main road.",
     description_hi: "मुख्य सड़क के पास अच्छी तरह से बना कमरा।",
-    images: [],
+    images: photos("room-03", 4),
     location: "First floor",
     location_hi: "पहली मंजिल",
     features: [],
@@ -73,12 +80,12 @@ export const properties: Property[] = [
     title_hi: "कमरा 4",
     description: "Well-lit room in a quiet building.",
     description_hi: "शांत इमारत में उजालेदार कमरा।",
-    images: [],
+    images: photos("room-04", 4),
     location: "First floor",
     location_hi: "पहली मंजिल",
     features: [],
     features_hi: [],
-    available: false,
+    available: true,
   },
   {
     id: "room-05",
