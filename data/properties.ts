@@ -141,8 +141,6 @@ export const properties: Property[] = [
     location_hi: "मेन रोड",
     features: ["Road facing", "Shutter", "Electricity connection"],
     features_hi: ["रोड फेसिंग", "शटर", "बिजली कनेक्शन"],
-    size: "approx. 200 sq ft",
-    size_hi: "लगभग 200 वर्ग फुट",
     available: true,
   },
   {
@@ -157,8 +155,6 @@ export const properties: Property[] = [
     location_hi: "मेन रोड",
     features: ["Road facing", "Shutter"],
     features_hi: ["रोड फेसिंग", "शटर"],
-    size: "approx. 150 sq ft",
-    size_hi: "लगभग 150 वर्ग फुट",
     available: false,
   },
   {
@@ -173,8 +169,6 @@ export const properties: Property[] = [
     location_hi: "मेन रोड",
     features: ["Corner shop", "Shutter", "Water connection"],
     features_hi: ["कॉर्नर दुकान", "शटर", "पानी कनेक्शन"],
-    size: "approx. 250 sq ft",
-    size_hi: "लगभग 250 वर्ग फुट",
     available: false,
   },
 ];
