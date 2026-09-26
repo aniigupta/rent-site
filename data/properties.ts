@@ -136,7 +136,7 @@ export const properties: Property[] = [
     title_hi: "दुकान 1",
     description: "Road-facing shop with a shutter front. Good footfall.",
     description_hi: "शटर वाली रोड-फेसिंग दुकान। ग्राहकों की अच्छी आवाजाही।",
-    images: [],
+    images: ["/images/shop-01/1.jpeg"],
     location: "Main Road",
     location_hi: "मेन रोड",
     features: ["Road facing", "Shutter", "Electricity connection"],
