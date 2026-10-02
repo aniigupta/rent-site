@@ -85,7 +85,7 @@ export const properties: Property[] = [
     location_hi: "पहली मंजिल",
     features: [],
     features_hi: [],
-    available: true,
+    available: false,
   },
   {
     id: "room-05",
