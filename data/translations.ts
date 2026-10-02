@@ -135,6 +135,7 @@ export const translations: Record<Language, Record<TranslationKey, string>> = {
 export const featureTranslations: Record<string, string> = {
   "Attached Bathroom": "अटैच्ड बाथरूम",
   "Attached Kitchen": "अटैच्ड किचन",
+  "Kitchen": "किचन",
   "Shared Bathroom": "साझा (शेयर्ड) बाथरूम",
   "Unfurnished": "बिना फर्नीचर (अनफर्निश्ड)",
   "Semi-furnished": "सेमी-फर्निश्ड",
