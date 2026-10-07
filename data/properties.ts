@@ -141,7 +141,7 @@ export const properties: Property[] = [
     location_hi: "मेन रोड",
     features: ["Road facing", "Shutter", "Electricity connection"],
     features_hi: ["रोड फेसिंग", "शटर", "बिजली कनेक्शन"],
-    available: true,
+    available: false,
   },
   {
     id: "shop-02",
