@@ -3,17 +3,17 @@ export const site = {
   name: "Rooms & Shops for Rent",
   name_hi: "कमरे और दुकानें किराए के लिए",
   description:
-    "Rooms and shops for rent in Jaitpur, Arpan Vihar, near Arpan Public School, Delhi. See photos and features, then contact the owner on WhatsApp or phone.",
+    "Rooms and shops for rent at Shivam Namkeen and General Store, J-7, Street No. 7, Arpan Vihar colony, Jaitpur, New Delhi. See photos and features, then contact the owner on WhatsApp or phone.",
   description_hi:
-    "जैतपुर, अर्पण विहार, अर्पण पब्लिक स्कूल के पास कमरे और दुकानें किराए के लिए उपलब्ध। फोटो देखें और मालिक से संपर्क करें।",
+    "जैतपुर, अर्पण विहार कॉलोनी (शिवम नमकीन एंड जनरल स्टोर, गली नं. 7) में कमरे और दुकानें किराए के लिए उपलब्ध। फोटो देखें और मालिक से संपर्क करें।",
   // Phone number with country code, digits only for WhatsApp (e.g. India: 91 + 10 digits).
   phone: "+91 87997 62746",
   whatsapp: "918076206264",
-  // General public location. Don't put the exact house address here.
-  area: "Jaitpur, Arpan Vihar, near Arpan Public School, Delhi",
-  area_hi: "जैतपुर, अर्पण विहार, अर्पण पब्लिक स्कूल के पास, दिल्ली",
-  // What "Get Directions" navigates to in Google Maps: a landmark, not the house.
-  mapsDestination: "Arpan Public School, Arpan Vihar, Jaitpur, Delhi",
+  // Property address and location
+  area: "Shivam Namkeen and General Store, J-7, Street No. 7, Arpan Vihar colony, Jaitpur, New Delhi, Delhi 110044",
+  area_hi: "शिवम नमकीन एंड जनरल स्टोर, जे-7, गली नं. 7, अर्पण विहार कॉलोनी, जैतपुर, नई दिल्ली, दिल्ली 110044",
+  // What "Get Directions" navigates to in Google Maps
+  mapsDestination: "Shivam Namkeen and General Store, J-7, Street No. 7, Arpan Vihar colony, Jaitpur, New Delhi, Delhi 110044",
 };
 
 export const directionsLink = (destination = site.mapsDestination) =>

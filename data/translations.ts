@@ -56,8 +56,8 @@ export const translations: Record<Language, Record<TranslationKey, string>> = {
     // Property Card & Detail
     viewDetails: "View photos & details",
     rentStatus: "Rent: Contact for details",
-    rentNote: "The owner will share the rent, the exact address and answer any questions on WhatsApp or by phone.",
-    exactAddressNote: "Exact address shared on call or WhatsApp.",
+    rentNote: "The owner will share the rent and answer any questions on WhatsApp or by phone.",
+    exactAddressNote: "Landmark: Shivam Namkeen and General Store, Street No. 7.",
     propertyRentedNotice: "This property has been rented.",
     seeAvailable: "See available",
     photosCount: "photos",
@@ -103,8 +103,8 @@ export const translations: Record<Language, Record<TranslationKey, string>> = {
     // Property Card & Detail
     viewDetails: "फोटो और विवरण देखें",
     rentStatus: "किराया: संपर्क करके जानें",
-    rentNote: "मालिक व्हाट्सएप या कॉल पर किराया, सटीक पता और आपके सभी सवालों के जवाब देंगे।",
-    exactAddressNote: "सटीक पता कॉल या व्हाट्सएप पर दिया जाएगा।",
+    rentNote: "मालिक व्हाट्सएप या कॉल पर किराया और आपके सभी सवालों के जवाब देंगे।",
+    exactAddressNote: "लैंडमार्क: शिवम नमकीन एंड जनरल स्टोर, गली नं. 7।",
     propertyRentedNotice: "यह संपत्ति किराए पर दी जा चुकी है।",
     seeAvailable: "उपलब्ध देखें",
     photosCount: "फोटो",
