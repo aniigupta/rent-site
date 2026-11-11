@@ -43,7 +43,7 @@ export const properties: Property[] = [
     location_hi: "पहली मंजिल",
     features: ["Kitchen"],
     features_hi: ["किचन"],
-    available: true,
+    available: false,
   },
   {
     id: "room-02",
